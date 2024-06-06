@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url("./graphics/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: playfair;
+  src: url("./graphics/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+h1 {
+  font-family: playfair;
+  font-size: 2rem;
+  color: green;
+}
+
+h2 {
+  font-family: playfair;
+  font-size: 1.6rem;
+  color: green;
+}
+
+p {
+  font-family: roboto-regular;
+  font-size: 1.2rem;
+  color: blue;
+}
+
