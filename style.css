@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -30,6 +31,7 @@ h1 {
 h2 {
   font-size: 2rem;
   margin: 10px 0;
+  text-align: center;
 }
 
 h3 {
@@ -63,14 +65,16 @@ p {
 
 #about-me {
   display: grid;
-  padding: 70px;
-  grid-template-columns: 2fr 5fr;
+  padding: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   background-color: transparent;
 }
 
 .center-vertically {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 10px 20px;
 }
 
@@ -90,20 +94,20 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .about-inner {
-  margin: 30px 30px 30px 0px;
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 170px 1fr;
+  grid-template-rows: 1fr 280px 1fr;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .about-me-icons {
   display: flex;
   gap: 20px;
-  justify-content: end;
+  justify-content: center;
   margin: 20px;
 }
 
@@ -124,7 +128,7 @@ p {
 
 #my-work {
   background-color: white;
-  padding: 70px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -136,21 +140,21 @@ p {
 .project-cards {
   padding: 20px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 50px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
   color: white;
-  width: 350px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .screenshot {
-  height: 250px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,9 +204,8 @@ p {
 
 #contact-me {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
-  padding: 70px;
 }
 
 #contact-me > * {
@@ -213,12 +216,20 @@ p {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 30px;
 }
 
 .angry-bear-div {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("./graphics/angry-bear.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  height: 400px;
 }
 
 .angry-bear {
@@ -245,4 +256,95 @@ p {
 /* div {
   border: 1px solid purple;
 } */
+
+@media only screen and (min-width: 800px) {
+  h2 {
+    text-align: left;
+  }
+
+  #about-me {
+    grid-template-columns: 2fr 5fr;
+    padding: 70px;
+  }
+
+  .about-outer {
+    margin-top: 0;
+  }
+  
+  .about-inner {
+    margin: 30px 30px 30px 0px;
+    grid-template-rows: 1fr 170px 1fr;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .about-me-icons {
+    gap: 20px;
+    justify-content: end;
+    margin: 20px;
+  }
+
+  .center-vertically {
+    padding: 10px 20px;
+  }
+
+  #my-work {
+    padding: 70px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 0;
+  }
+
+  .project {
+    width: 350px;
+  }
+
+  .screenshot {
+    height: 250px;
+  }
+
+  #contact-me {
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
+  }
+
+  .angry-bear {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #about-me {
+    grid-template-columns: 2fr 5fr;
+    padding: 70px;
+  }
+
+  .about-outer {
+    margin-top: 0;
+  }
+  
+  .about-inner {
+    margin: 30px 30px 30px 0px;
+    grid-template-rows: 1fr 170px 1fr;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .about-me-icons {
+    gap: 20px;
+    justify-content: end;
+    margin: 20px;
+  }
+
+  .center-vertically {
+    padding: 10px 20px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 
