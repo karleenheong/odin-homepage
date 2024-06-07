@@ -14,18 +14,32 @@
   src: url("./graphics/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
-h1 {
+h1, 
+h2, 
+h3, 
+h4 {
   font-family: playfair;
-  font-size: 2.5rem;
-  color: white;
   font-weight: 400;
 }
 
+h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
 h2 {
-  font-family: playfair;
   font-size: 2rem;
-  font-weight: 400;
   margin: 10px 0;
+}
+
+h3 {
+  font-size: 1.9rem;
+  color: white;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: black;
 }
 
 p {
@@ -103,8 +117,85 @@ p {
   height: auto;
 }
 
+.icon3 {
+  width: 25px;
+  height: auto;
+}
+
 #my-work {
   background-color: white;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+#my-work p {
+  color: black;
+}
+
+.project-cards {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.screenshot {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-details {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.project-icons {
+  display: flex;
+  gap: 15px;
+}
+
+#project1 {
+  background-color: #9E1B1D;
+}
+
+#project2 {
+  background-color: #7C75C9;
+}
+
+#project3 {
+  background-color: #5E8F4C;
+}
+
+#project4 {
+  background-color: #C363B4;
+}
+
+#project5 {
+  background-color: #D78F39;
+}
+
+#project6 {
+  background-color: #4997D0;
 }
 
 #contact-me {
