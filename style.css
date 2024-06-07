@@ -247,15 +247,16 @@ p {
   display: flex;
   gap: 15px;
   margin: 20px 0;
+  justify-content: center;
 }
 
 .contact-me-div > div {
   margin: 5px 10px;
 }
 
-/* div {
+div {
   border: 1px solid purple;
-} */
+}
 
 @media only screen and (min-width: 800px) {
   h2 {
@@ -298,7 +299,7 @@ p {
   }
 
   .project {
-    width: 350px;
+    width: 300px;
   }
 
   .screenshot {
@@ -310,9 +311,12 @@ p {
     padding: 70px;
   }
 
-  .angry-bear {
-    width: 500px;
-    height: auto;
+  .contact-me-div {
+    padding: 10px;
+  }
+
+  .contact-me-icons {
+    justify-content: left;
   }
 }
 
