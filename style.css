@@ -16,19 +16,84 @@
 
 h1 {
   font-family: playfair;
-  font-size: 2rem;
-  color: green;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 400;
 }
 
 h2 {
   font-family: playfair;
-  font-size: 1.6rem;
-  color: green;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
 p {
   font-family: roboto-regular;
-  font-size: 1.2rem;
-  color: blue;
+  font-size: 1.1rem;
+}
+
+.section.blue {
+  background-color: #0991B1;
+}
+
+#about-me {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: 2fr 5fr;
+}
+
+.center-vertically {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  background-image: url("./graphics/bear-portrait.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 400px;
+}
+
+.about-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-inner {
+  margin: 30px 30px 30px 0px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 200px 1fr;
+}
+
+.about-me-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin: 20px;
+}
+
+.icon1 {
+  width: 25px;
+  height: auto;
+}
+
+.icon2 {
+  width: 30px;
+  height: auto;
+}
+
+#contact-me > * {
+  color: white;
+}
+
+div {
+  border: 1px solid purple;
 }
 
