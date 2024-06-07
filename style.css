@@ -103,8 +103,52 @@ p {
   height: auto;
 }
 
+#my-work {
+  background-color: white;
+}
+
+#contact-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 70px;
+}
+
 #contact-me > * {
   color: white;
+}
+
+.contact-me-div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.angry-bear-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.angry-bear {
+  width: 500px;
+  height: auto;
+}
+
+.icon-div {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin: 8px 0;
+}
+
+.contact-me-icons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.contact-me-div > div {
+  margin: 5px 10px;
 }
 
 /* div {
