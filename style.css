@@ -63,7 +63,7 @@ p {
   z-index: -2;
 }
 
-.tablet-about {
+.tablet-container {
   display: none;
 }
 
@@ -273,6 +273,7 @@ p {
 
   .tablet-container {
     margin-top: 100px;
+    display: block;
   }
 
   .tablet-about {
@@ -339,10 +340,24 @@ p {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
+  h1 {
+    text-align: center;
+  }
+  
+  .tablet-container {
+    display: none;
+  }
+
   #about-me {
-    grid-template-columns: 2fr 5fr;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
     padding: 70px;
+  }
+
+  .profile-pic {
+    width: 100%;
   }
 
   .about-outer {
@@ -355,19 +370,40 @@ p {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
+  .center-vertically {
+    padding: 10px 20px;
+    justify-content: flex-start;
+  }
+
   .about-me-icons {
     gap: 20px;
     justify-content: end;
     margin: 20px;
   }
 
-  .center-vertically {
-    padding: 10px 20px;
+  .project {
+    width: 280px;
+    height: 350px;
+  }
+
+  .screenshot {
+    text-align: center;
   }
 
   .project-cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .angry-bear {
+    width: 700px;
   }
 }
 
+@media only screen and (min-width: 1250px) {
+  .project {
+    width: 350px;
+    height: 450px;
+  }
+}
